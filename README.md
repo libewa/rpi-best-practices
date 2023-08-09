@@ -5,8 +5,6 @@ The default Raspberry Pi OS image provided by the Raspberry Pi Foundation is bas
 The guide is divided into three sections: [Steps for the desktop version of Raspberry Pi OS](#steps-for-the-desktop-version-of-raspberry-pi-os), [Steps for Raspberry Pi OS Lite](#steps-for-raspberry-pi-os-lite) and [Steps for both versions of Raspberry Pi OS](#steps-for-both-versions-of-raspberry-pi-os).
 All instructions refer to the latest version of Raspberry Pi OS (stable). Currently, this version is called Bullseye, while the legacy version (oldstable) is called Buster.
 
-Some links on this page link to external pages. These pages contained useful information at the time of writing, but may or may not have changed drastically since I last checked. I can and do not take any responsiblity for the content of those pages.
-
 ## Steps for the desktop version of Raspberry Pi OS
 
 ### Software
@@ -222,5 +220,22 @@ sudo chmod 700 /home/*
 If you have a Pi 4 with it's [case](https://www.raspberrypi.com/products/raspberry-pi-4-case/), it may be worth checking out the [official case fan](https://www.raspberrypi.com/products/raspberry-pi-4-case-fan/) (after you have drilled holes into the lid to help ventilation).
 
 You can cofigure it with `raspi-config` (option P4). This requires a reboot.
+
+## Legal
+
+### Legal Notice (Impressum)
+
+According to the European [Directive 2006/123/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006L0123) and the German <a href="https://www.gesetze-im-internet.de/dlinfov/BJNR026700010.html" hreflang="de" >DL-InfoV</a>, sites do not need a legal notice if they provide <q>non-economic services of general interest</q>.
+
+### Disclaimer
+
+Some links on this page link to external pages. These pages contained useful information at the time of writing, but may or may not have changed drastically since I last checked. I can and do not take any responsiblity for the content of those pages.
+
+I am also not responsible for any negative effects the actions described in this guide may have on your system.
+
+### Contact
+
+[Open an Issue](https://github.com/libewa/rpi-best-practices/issues/new) (account required)
+
 
 [pi-apps]: https://github.com/Botspot/pi-apps
