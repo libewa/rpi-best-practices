@@ -1,5 +1,3 @@
-# Raspberry Pi Setup Best Practices
-
 The default Raspberry Pi OS image provided by the Raspberry Pi Foundation is based on age-old Debian GNU/Linux traditions. These, however, are often neither secure nor good-looking. This guide shows you how to beautify and secure your setup.
 
 ## About this Guide
