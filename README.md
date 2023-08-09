@@ -227,6 +227,10 @@ You can cofigure it with `raspi-config` (option P4). This requires a reboot.
 
 According to the European [Directive 2006/123/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006L0123) and the German <a href="https://www.gesetze-im-internet.de/dlinfov/BJNR026700010.html" hreflang="de" >DL-InfoV</a>, sites do not need a legal notice if they provide <q>non-economic services of general interest</q>.
 
+### License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">rpi-best-practices</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/libewa" property="cc:attributionName" rel="cc:attributionURL">libewa</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
 ### Disclaimer
 
 Some links on this page link to external pages. These pages contained useful information at the time of writing, but may or may not have changed drastically since I last checked. I can and do not take any responsiblity for the content of those pages.
