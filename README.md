@@ -11,7 +11,7 @@ All instructions refer to the latest version of Raspberry Pi OS (stable). Curren
 
 #### Install a graphical package manager
 
-While Raspberry Pi OS has the Recommended Software tool and in older versions the Add/Remove Programs utility, they are not very good. Recommended Software only has a few programs that are preinstalled on the full image anyways and Add/Remove Programs' UI is so terrible, that I'm not even listing it as an option to install software.
+While Raspberry Pi OS has the Recommended Software tool and in older versions the Add/Remove Programs utility, they are not very good. Recommended Software only has a few programs that are preinstalled on the full image anyway and Add/Remove Programs' UI is so terrible, that I'm not even listing it as an option to install software.
 
 ##### GNOME Software
 
@@ -50,8 +50,7 @@ LibreOffice is a set of programs much like Microsoft Office. It has a word proce
 
 LibreOffice is available from APT, GNOME Software, Raspberry Pi Recommended Software and Pi-Apps.
 
-To install it from APT:
-
+To install with apt:
 ```bash
 sudo apt install libreoffice
 ```
@@ -60,9 +59,8 @@ sudo apt install libreoffice
 
 If you plan on editing text files, Microsoft's [Visual Studio Code](https://code.visualstudio.com/) is a must. Raspberry Pi OS's included Mousepad and Geany editors aren't fit for editing large codebases or using programs like Git.
 
-Visual Studio Code is available on APT , Pi-Apps and Recommended Software. While it also shows up on GNOME Software if you have Flatpak installed, that version is not official and has many limitations, such as not being able to communicate with other programs. There is also a `.deb` archive available for download on it's website.
-
-To install from APT:
+Visual Studio Code is available on APT, Pi-Apps and Recommended Software. While it also shows up on GNOME Software if you have Flatpak installed, that version is not official and has many limitations, such as not being able to communicate with other programs. There is also a `.deb` archive available for download on its website. Some people prefer VSCodium, a version built from source, meaning it doesn't contain tracking etc., which has more complicated installation steps: https://vscodium.com/#install-on-debian-ubuntu-deb-package
+(actually, these are the same steps as for code, just with a different repository, but those are already done on Pi OS)
 
 ```bash
 sudo apt install code
@@ -70,9 +68,9 @@ sudo apt install code
 
 ### Install another web browser
 
-The default web browser application that comes with Raspberry Pi OS is Chromium, a stripped-down, open-source version of Google Chrome. It takes forever to start up and pressures you into using a Google Account. While your favorite web browser might offer a Linux download (no, Microsoft Edge (Chromium) fans, you don't even need to ask), a good choice is [Mozilla Firefox].
+The default web browser application that comes with Raspberry Pi OS is Chromium, a stripped-down, open-source version of Google Chrome. It takes forever to start up and pressures you into using a Google Account. While your favorite web browser might offer a Linux download (no, Microsoft Edge (Chromium) fans, you don't even need to ask), a good choice is Mozilla Firefox.
 
-Firefox ESR is available on APT, while Rapid Release versions, which update every six weeks are not. These can be installed using Pi-Apps.
+Firefox ESR is available on APT, while Rapid Release versions, which update every six weeks, are not. These can be installed using Pi-Apps.
 It is also available from Flatpak, and, by extension (great pun), GNOME Software.
 
 ### Install an E-Mail program
@@ -89,7 +87,7 @@ The Free Software Foundation provides an excellent [beginner's guide](https://em
 #### Customize your launch bar
 
 When right-clicking any part of the launch bar at the top of the screen, a menu containing the elements "\<element> Settings" and "Add/Remove bar elements" appears.
-The settings for the app launch bar are especially relevant, as the allow you to add custom programs to it.
+The settings for the app launch bar are especially relevant, as they allow you to add custom programs to it.
 
 #### Read Raspberry Pi Press
 
@@ -106,7 +104,8 @@ All start menu entries are simple `.desktop` files saved in specific locations (
 
 Such as with the desktop version of Raspberry Pi OS, there are many great pieces of software for Raspberry Pi OS Lite.
 
-While you will need to install most of these using the command line, a command line extension for Pi-Apps exists, which you will need to install manually
+While you will need to install most of these using the command line, a command line extension for Pi-Apps exists, which you will need to install manually.
+There is also a TUI (terminal user interface) client for APT called `aptitude`, which you can use on both versions of Raspberry Pi OS, but because Desktop users can use GNOME Software, I'm only listing it here.
 
 #### Install Pi-Apps and the Pi-Apps command line extension
 
@@ -116,7 +115,11 @@ While the command line extension to [Pi-Apps][pi-apps] is available on Pi-Apps i
 cd
 wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash
 wget https://raw.githubusercontent.com/Itai-Nelken/PiApps-terminal_bash-edition/main/pi-apps-terminal-bash-edition.sh
-ln -s /home/YOURNAME/pi-apps-terminal-bash-edition.sh ~/bin/pi-apps
+ln -s ~/pi-apps-terminal-bash-edition.sh ~/bin/pi-apps
+```
+#### Install Aptitude
+```bash
+sudo apt install aptitude
 ```
 
 #### Install the Lynx browser
@@ -143,7 +146,7 @@ The official tldr client is installed with npm, but another client, [tealdeer](h
 
 #### Install Flatpak
 
-Flatpak is a package manager that installs all software in separate sandboxes. While this sometimes leads to limitations like with VSCode ([see above](#install-visual-studio-code)), it makes your system way more secure.
+Flatpak is a package manager that installs all software in separate sandboxes. While this sometimes leads to limitations, like with VSCode ([see above](#install-visual-studio-code)), it makes your system way more secure.
 
 To install Flatpak, run these commands:
 
@@ -217,9 +220,9 @@ sudo chmod 700 /home/*
 
 ### Other configuration changes
 
-If you have a Pi 4 with it's [case](https://www.raspberrypi.com/products/raspberry-pi-4-case/), it may be worth checking out the [official case fan](https://www.raspberrypi.com/products/raspberry-pi-4-case-fan/) (after you have drilled holes into the lid to help ventilation).
+If you have a Pi 4 with its [case](https://www.raspberrypi.com/products/raspberry-pi-4-case/), it may be worth checking out the [official case fan](https://www.raspberrypi.com/products/raspberry-pi-4-case-fan/) (after you have drilled holes into the lid to help ventilation).
 
-You can cofigure it with `raspi-config` (option P4). This requires a reboot.
+You can configure it with `raspi-config` (option P4). This requires a reboot.
 
 ## Legal
 
