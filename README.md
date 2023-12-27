@@ -93,6 +93,7 @@ The settings for the app launch bar are especially relevant, as they allow you t
 
 The Bookshelf application allows you to download and read PDFs of Raspberry Pi magazines and books completely for free.
 You can find it preinstalled in the start menu: Help &rightarrow; Bookshelf.
+A good first read is the latest Raspberry Pi beginners guide (5th edition as of the time of writing).
 
 #### Add custom entries to the start menu
 
@@ -132,14 +133,6 @@ Install with APT:
 sudo apt install lynx
 ```
 
-#### Install `tldr`
-
-Most Linux and Unix users should be familiar with `man`: a database of the manuals for almost all installed programs, configuration files and more.
-
-[TLDR](https://tldr.sh) takes a different approach. Instead of documenting everything a program has to offer, tldr pages show only the most common commands, and are similar to most programs' `--help` output (but readable).
-
-The official tldr client is installed with npm, but another client, [tealdeer](https://github.com/dbrgn/tealdeer), is available on Pi-Apps.
-
 ## Steps for both versions of Raspberry Pi OS
 
 ### Software
@@ -160,6 +153,14 @@ If you installed [GNOME Software](#gnome-software), you probably want to install
 ```bash
 sudo apt install gnome-software-plugin-flatpak
 ```
+
+#### Install `tldr`
+
+Most Linux and Unix users should be familiar with `man`: a database of the manuals for almost all installed programs, configuration files and more.
+
+[TLDR](https://tldr.sh) takes a different approach. Instead of documenting everything a program has to offer, tldr pages show only the most common commands, and are similar to most programs' `--help` output (but readable).
+
+The official tldr client is installed with npm, but another client, [tealdeer](https://github.com/dbrgn/tealdeer), is available on Pi-Apps.
 
 #### Use a better shell
 
@@ -223,6 +224,8 @@ sudo chmod 700 /home/*
 If you have a Pi 4 with its [case](https://www.raspberrypi.com/products/raspberry-pi-4-case/), it may be worth checking out the [official case fan](https://www.raspberrypi.com/products/raspberry-pi-4-case-fan/) (after you have drilled holes into the lid to help ventilation).
 
 You can configure it with `raspi-config` (option P4). This requires a reboot.
+
+This isn't necessary on Pi 5, as a fan plugged into the FAN connector works out-of-the-box.
 
 ## Legal
 
