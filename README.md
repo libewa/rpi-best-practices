@@ -15,7 +15,7 @@ While Raspberry Pi OS has the Recommended Software tool and in older versions th
 
 ##### GNOME Software
 
-If you have previously used Ubuntu or any derivative like Vanilla OS, you might know the Software application (known as `snap-store` internally). But did you know, that it is a fork of GNOME Software, an application you can actually install on Raspberry Pi OS? GNOME Software was also used in versions of Ubuntu prior to 20.04 LTS, but was replaced by `snap-store` in that version to push people into using Canonical's proprietary `snap` format.
+If you have previously used Ubuntu or any derivative, you might know the Software application (known as `snap-store` internally). But did you know, that it is a fork of GNOME Software, an application you can actually install on Raspberry Pi OS? GNOME Software was also used in versions of Ubuntu prior to 20.04 LTS, but was replaced by `snap-store` in that version to push people into using Canonical's proprietary `snap` format. GNOME Software is also based on the same PackageKit framework as Add/Remove Programs, but is based on GTK+3 and `libadwaita`, giving it a much cleaner look.
 
 To install GNOME Software, run this command in a terminal window:
 
